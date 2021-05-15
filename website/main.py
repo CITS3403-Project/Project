@@ -48,6 +48,11 @@ def profile():
     name = current_user.name
     return render_template('profile.html', name=name, form=form)
 
+@main.route('/muscle')
+@login_required
+def muscle():
+    return render_template('muscle.html', name=current_user.name)
+
 # Quiz taking view function (todo)
 @main.route('/quiz/<quizid>', methods=['GET', 'POST'])
 @login_required
