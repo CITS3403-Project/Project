@@ -9,6 +9,21 @@
       <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles/game.css') }}"/>
   </head>
   <body>
+  <div class="navbar">
+    <div class="container flex">
+        <h1 class="logo">
+            <span class="highlights"><i class="fas fa-dumbbell"></i> Gym</span>Pal
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.courses') }}" class="navbar-item">Courses</a></li>
+                <li><a href="{{ url_for('main.profile') }}" class="navbar-item">Profile</a></li>
+                <li><a href="{{ url_for('main.quiz') }}" class="navbar-item">Quiz</a></li>
+                <li><a href="{{ url_for('auth.logout') }}" class="navbar-item">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
     <div class="container">
       <div id="loader"></div>
       <div id="game" class="justify-center flex-column hidden">
