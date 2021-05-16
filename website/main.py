@@ -26,6 +26,11 @@ def home():
 def courses():
     return render_template('courses.html')
 
+@main.route("/muscle")
+@login_required
+def muscle():
+    return render_template('muscle.html')    
+
 @main.route('/profile', methods=['GET', 'POST'])
 @login_required
 def profile():
