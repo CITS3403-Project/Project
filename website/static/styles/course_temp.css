@@ -140,7 +140,7 @@
 }
 
 .muscles img {
-  width: 60%;
+  width: 40%;
   border-radius: 5%;
   box-shadow: 0 0 10px 2px var(--primary-color);
 }
@@ -168,6 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 
 .question-container {
