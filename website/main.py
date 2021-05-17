@@ -41,9 +41,6 @@ def courses():
 @main.route("/muscle")
 @login_required
 def muscle():
-    """
-    Routes to the muscle building course
-    """
     return render_template('muscle.html')
 
 
